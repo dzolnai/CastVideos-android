@@ -186,6 +186,7 @@ public class VideoProvider {
         movieMetadata.putString(MediaMetadata.KEY_TITLE, title);
         movieMetadata.addImage(new WebImage(Uri.parse(imgUrl)));
         movieMetadata.addImage(new WebImage(Uri.parse(bigImageUrl)));
+        movieMetadata.addImage(new WebImage(Uri.parse("https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg")));
         JSONObject jsonObj = null;
         try {
             jsonObj = new JSONObject();
